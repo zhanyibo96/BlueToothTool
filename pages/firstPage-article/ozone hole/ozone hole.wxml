@@ -1,0 +1,24 @@
+<!--pages/firstPage-article/water/water.wxml-->
+<view>
+
+<view class="slides">
+  <image src="/images/assets/firstPage.article.pic/ozone hole.jpg"></image>
+</view>
+<view class="top-view">
+  <text>别让孩子知道的鱼类只有泥鳅。</text>
+</view>
+<view class="article01">
+  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;臭氧层空洞是大气平流层中臭氧浓度最小处，是臭氧层缺失处。而臭氧层是大气平流层中臭氧浓度最大处，是地球的一个保护层，太阳紫外线辐射大部被其吸收。有臭氧层空洞的地区会对生物产生重大的影响。
+  </text>
+</view>
+
+<view class="image01">
+  <image src="/images/assets/firstPage.article.pic/fenduan.jpg"></image>
+</view>
+
+<view class="article02">
+  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10多年来，经科学家研究；大气中的臭氧每减少1%。照射到地面的紫外线就增加2%，人的皮肤癌就增加3%，还受到白内障、免疫系统缺陷和发育停滞等疾病的袭击。如今居住在距南极洲较近的智利南端海伦娜岬角的居民，已尝到苦头，只要走出家门，就要在衣服遮不住的肤面，涂上防晒油，戴上太阳眼镜，否则半小时后，皮肤就晒成鲜艳的粉红色，并伴有痒痛；羊群则多患白内障，几乎全盲。据说那里的兔子眼睛全瞎，猎人可以轻易地拎起兔子耳朵带回家去，河里捕到的鲜鱼也都是盲鱼。
+  </text>
+</view>
+
+</view>

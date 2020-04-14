@@ -1,0 +1,24 @@
+<!--pages/firstPage-article/water/water.wxml-->
+<view>
+
+<view class="slides">
+  <image src="/images/assets/firstPage.article.pic/desert.jpg"></image>
+</view>
+<view class="top-view">
+  <text>别让孩子知道的鱼类只有泥鳅。</text>
+</view>
+<view class="article01">
+  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全球沙漠总面积已超过4800万平方千米，约占陆地的1/3，土壤沙漠化速度每年超过600万公顷，相当于日本全国的耕地面积受到沙漠化影响。荒漠化不仅是生态环境问题，更演变为经济问题和社会问题，它给人类带来贫困和社会不稳定。
+  </text>
+</view>
+
+<view class="image01">
+  <image src="/images/assets/firstPage.article.pic/fenduan.jpg"></image>
+</view>
+
+<view class="article02">
+  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;土地荒漠化的危害是破坏土地资源，使可供农牧的土地面积减少，土地滋生能力退化，植物量减少，土地载畜力下降，作物的单位面积产量降低。荒漠化已给许多国家和地区的农业、牧业和人民生活财产造成严重损失。 
+  </text>
+</view>
+
+</view>

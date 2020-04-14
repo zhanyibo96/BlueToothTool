@@ -1,0 +1,25 @@
+<!--pages/firstPage-article/water/water.wxml-->
+<view>
+
+<view class="slides">
+  <image src="/images/assets/firstPage.article.pic/nuclear pollution.jpg"></image>
+</view>
+<view class="top-view">
+  <text>别让孩子知道的鱼类只有泥鳅。</text>
+</view>
+<view class="article01">
+  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;核污染主要指核物质泄露后的遗留物对环境的破坏，包括核辐射、原子尘埃等本身引起的污染，还有这些物质对环境的污染后带来的次生污染，比如被核物质污染的水源对人畜的伤害。
+  </text>
+</view>
+
+<view class="image01">
+  <image src="/images/assets/firstPage.article.pic/fenduan.jpg"></image>
+</view>
+
+<view class="article02">
+  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一定量放射性物质进入人体后，既具有生物化学毒性,又能以它的辐射作用造成人体损伤,这种作用称为内照射；体外的电离辐射照射人体也会造成损伤，这种作用称为外照射 
+辐射损伤是各种电离辐射作用于人体所引起的各种生物效应的总称。这是由于各种电离辐射（如X或γ射线、β射线、α射线和中子束等）引起电离、激发等作用而把能量传递给机体，造成各组织器官的病理变化。放射性核素可以对周围产生很强的辐射，形成核污染。放射性沉降物还可以通过食物链进入人体，在体内达到一定剂量时就会产生有害作用。人会出现头晕、头疼、食欲不振等症状，发展下去会出现白细胞和血小板减少等症状。如果超剂量的放射性物质长期作用于人体，就能使人患上肿瘤、白血病及遗传障碍。
+  </text>
+</view>
+
+</view>

@@ -1,0 +1,24 @@
+<!--pages/firstPage-article/water/water.wxml-->
+<view>
+
+<view class="slides">
+  <image src="/images/assets/firstPage.article.pic/whitepollution.jpg"></image>
+</view>
+<view class="top-view">
+  <text>别让孩子知道的鱼类只有泥鳅。</text>
+</view>
+<view class="article01">
+  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;白色污染是对废塑料污染环境现象的一种形象称谓。是指用聚苯乙烯、聚丙烯、聚氯乙烯等高分子化合物制成的包装袋、农用地膜、一次性餐具、塑料瓶等塑料制品使用后被弃置成为固体废物，由于随意乱丢乱扔，难于降解处理，给生态环境和景观造成的污染。
+  </text>
+</view>
+
+<view class="image01">
+  <image src="/images/assets/firstPage.article.pic/fenduan.jpg"></image>
+</view>
+
+<view class="article02">
+  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;抛弃在陆地或水体中的废旧塑料包装物，被动物当作食物吞入，导致动物死亡（在动物园、牧区和海洋中，此类情况已屡见不鲜）；第二，混入生活垃圾中的废旧塑料包装物很难处理：填埋处理将会长期占用土地，混有塑料的生活垃圾不适用于堆肥处理，分拣出来的废塑料也因无法保证质量而很难回收利用。 
+  </text>
+</view>
+
+</view>

@@ -1,0 +1,24 @@
+<!--pages/firstPage-article/water/water.wxml-->
+<view>
+
+<view class="slides">
+  <image src="/images/assets/firstPage.article.pic/nature.jpg"></image>
+</view>
+<view class="top-view">
+  <text>别让孩子知道的鱼类只有泥鳅。</text>
+</view>
+<view class="article01">
+  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;自然，是人类的起点，自然，给予了我们生命，而我们却破坏自然。导致自然原有的生态天平倾斜了。水资源也变得浑浊，空气也不纯净了，不可再生资源也在逐渐减少。人类变得如此吝啬，人类成为了地球上的“毒瘤”。
+  </text>
+</view>
+
+<view class="image01">
+  <image src="/images/assets/firstPage.article.pic/fenduan.jpg"></image>
+</view>
+
+<view class="article02">
+  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地球表面满大街都是易拉罐的身影，无数的一次性筷子遍布各地，工厂不断在排放垃圾于海水中。人类闻这样的空气，自然就会生病，而在这种工厂附近的居民他们可怎么办啊？湖水也混浊不堪，因此很容易引发众多的病端。如果继续这样下去，人类还能生存下去吗？。 
+  </text>
+</view>
+
+</view>

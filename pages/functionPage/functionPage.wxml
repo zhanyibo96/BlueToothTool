@@ -1,0 +1,43 @@
+<!--pages/funtionPage/funtionPage.wxml-->
+
+<view class='bluetooth-detail'>
+  <view>设备名：{{name}}</view>
+  <view>设备ID：{{deviceId}}</view>
+  <view>标签ID：{{rfidId}}</view>
+  <view>标签信号：{{rfidSignalQ}},{{rfidSignalI}}</view>
+  <view>经度：{{latitude}}</view>
+  <view>纬度：{{longitude}}</view>
+</view>
+
+<!-- <view class='card'>
+  <view>日志：</view>
+  <view>
+    <scroll-view scroll-y="true" class='text-box list'>
+      <text>{{textLog}}</text>
+    </scroll-view>
+  </view>
+</view> -->
+<view class="rfidSignal" style="flex-direction:row;">
+<view class="rfidSignalQ" ></view>
+<view class="rfidSignalI" ></view>
+</view>
+
+<view class="foot">
+<!--输入框-->
+ <view class='function-input'>
+    <!-- <input class="input"  type="text" cursor-spacing="20" bindinput="orderInput" placeholder="请输入指令" value='{{accountInputStr}}' /> -->
+    <button bindtap='sentOrder' class="send">单次获取</button>
+    <button bindtap='continuousSentOrder' class="send">连续获取</button>
+    <button bindtap='stopSentOrder' class="send">停止获取</button>
+    <!-- <button bindtap="ContinuousSend" >连续发送指令</button> -->
+  </view>
+
+<!-- 底部按钮 -->
+
+<view class="function-button-div2">
+    <!-- <button type="primary" class='function-button_left' bindtap="startClear">清空日志</button> -->
+    
+    <button type="warn" class='function-button' bindtap="closeBLEConnection">断开蓝牙连接</button>
+    
+</view>
+</view>

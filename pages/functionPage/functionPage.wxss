@@ -1,0 +1,101 @@
+/* pages/funtionPage/functionPage.wxss */
+
+
+.bluetooth-detail {
+  width: 95%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+  
+}
+.card {
+  border-radius: 10rpx;
+  background-color: #fff; 
+  margin-top: 50rpx;
+  padding: 20rpx;
+  box-shadow: 0 2rpx 4rpx#FDF5E6;
+}
+.text-box list{
+  height: 700rpx;
+}
+.list {
+  max-height: 45vh;
+}
+
+.foot{
+  width: 100%;
+	position: absolute;
+	bottom: 10%;
+  font-size: 16rpx;
+}
+
+.function-input{
+  width: 80%;
+	position: relative;
+  font-size: 16rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0rpx 10%; 
+}
+.function-input image{
+	width: 40rpx;
+	height: 40rpx;
+	margin-right: 20rpx;
+}
+
+.function-button-div {
+	width: 80%;
+	position: absolute;
+  font-size: 16rpx;
+
+}
+.function-input button{
+  font-size:26rpx;
+}
+.input{
+  border: 1rpx solid #666;
+  width: 400rpx;
+  padding: 7rpx 10rpx;
+  text-indent:10px;
+  font-size: 32rpx;
+}
+/*获取RFID标签信息功能按钮*/
+.function-button-div2 {
+	width: 100%;
+	position: relative;
+	top: 20px;	
+  bottom: 6%;
+}
+
+/*断开蓝牙连接功能按钮*/
+.function-button {
+  position:relative;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:14px;
+  padding-right:14px;
+  box-sizing:border-box;
+  font-size:13px;
+  width: 45%;
+}
+
+.rfidSignal{
+  position:relative;
+  display:block;
+  width: 100%;
+  height: auto;
+}
+.rfidSignalQ{
+  width: 35px;
+  height: 20px;
+  background: blue;
+}
+.rfidSignalI{
+  width: 55px;
+  height: 20px;
+  background: yellow;
+}
