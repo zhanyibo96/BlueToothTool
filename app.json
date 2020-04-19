@@ -1,9 +1,9 @@
 {
   "pages": [
-      "pages/functionPage/functionPage",
+     
     "pages/index/index",
     "pages/firstPage/firstPage",
-  
+    "pages/functionPage/functionPage",
     "pages/firstPage-article/water/water",
     "pages/firstPage-article/nature/nature",
     "pages/firstPage-article/desert/desert",
