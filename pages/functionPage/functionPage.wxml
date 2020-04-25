@@ -22,18 +22,22 @@
 <view class="rfidSignalI" ></view>
 </view>
 
+<view class="userhb">
+        <ec-canvas class="mychart-dom-line" canvas-id="mychart2-line" id="mychart2-line" ec="{{br}}"></ec-canvas>
+</view>
+
 <view class="foot">
 <!--输入框-->
+
+<!-- echarts图 -->
  <view class='function-input'>
     <!-- <input class="input"  type="text" cursor-spacing="20" bindinput="orderInput" placeholder="请输入指令" value='{{accountInputStr}}' /> -->
     <button bindtap='sentOrder' class="send">单次获取</button>
     <button bindtap='continuousSentOrder' class="send">连续获取</button>
     <button bindtap='stopSentOrder' class="send">停止获取</button>
-    <!-- <button bindtap="ContinuousSend" >连续发送指令</button> -->
   </view>
 
 <!-- 底部按钮 -->
-
 <view class="function-button-div2">
     <!-- <button type="primary" class='function-button_left' bindtap="startClear">清空日志</button> -->
     

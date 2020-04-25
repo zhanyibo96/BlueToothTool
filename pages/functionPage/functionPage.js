@@ -1,6 +1,16 @@
 // pages/funtionPage/funtionPage.js
-var app = getApp();
+// var app = getApp();
 var utils = require("../../utils/util.js");
+
+const ctx = wx.createCanvasContext("bgCanvas")
+import * as echarts from '../../ec-canvas/echarts';
+
+//获取应用实例
+const app = getApp();
+let ChartPer = null;
+let ChartPer2 = null;
+let time24;
+
 Page({
 
   /**
@@ -17,10 +27,22 @@ Page({
     notifyCharacteristicId: "",
     connected: true,
     canWrite: false,
-    rfidId:"无",
-    rfidSignalQ: "无信号",
-    rfidSignalI: "无信号",
+    rfidId:"空",
+    rfidSignalQ: "0",
+    rfidSignalI: "0",
     setInter: '',
+
+    //echarts图变量
+    option: {},
+    br: {
+      lazyLoad: true
+    },
+    hb: {
+      lazyLoad: true
+    },
+    brData: [],
+    hbData: [],
+
 
     //GPS部分
     //设置标记点
@@ -38,7 +60,15 @@ Page({
     latitude: '',
     longitude: '',
   },
-
+  /**
+     * 生命周期函数--监听页面初次渲染完成
+     */
+  onReady: function () {
+    this.echartsHb = this.selectComponent("#mychart-line");
+    this.echartsBr = this.selectComponent("#mychart2-line");
+    this.init_hb_echarts();
+    this.init_br_echarts();
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -48,12 +78,20 @@ Page({
     var devname = decodeURIComponent(options.name);
     var devserviceid = decodeURIComponent(options.serviceId);
     var log = that.data.textLog + "设备名=" + devname +"\n设备UUID="+devid+"\n服务UUID="+devserviceid+ "\n";
+
+    this.mqtt();
+    let brData = [];
+    for (let i = 0; i < 15; i++) {
+      brData.push(null);
+    }
+  
     //options页面跳转的参数,上个页面的参数可以通过options取得
     this.setData({
       textLog: log,
       deviceId: devid,
       name: devname,
-      serviceId: devserviceid 
+      serviceId: devserviceid,
+      brData 
     });
     //获取特征值
     that.getBLEDeviceCharacteristics();
@@ -69,6 +107,13 @@ Page({
       }
     })
   
+  },
+  
+  //销毁时清空Chart
+  onUnload: function () {
+    ChartPer = null;
+    ChartPer2 = null;
+    ChartPer3 = null;
   },
 
   /**
@@ -297,10 +342,157 @@ Page({
     console.log("循环暂停")
     clearInterval(that.data.setInter);
     this.setData({
-      rfidId: "无",
-      rfidSignalQ: "无信号",
-      rfidSignalI: "无信号",
+      rfidId: "空",
+      rfidSignalQ: "0",
+      rfidSignalI: "0",
     });
-  }
+  },
+  //echarts图设置
+  init_br_echarts: function () {
+    this.echartsBr.init((canvas, width, height) => {
+      //初始化图标
+      ChartPer2 = echarts.init(canvas, null, {
+        width: width,
+        height: height
+      });
+      //返回值为chart实列否则会有影响
+      this.setBr();
+      return ChartPer2;
+    })
+  },
 
+  initOption: function (set) {
+    let {
+      yMax,
+      yMin,
+      ySplitNumber,
+      markAreaMin,
+      markAreaMax
+    } = set
+    let option = {
+
+      tooltip: {
+        show: false
+      },
+      grid: {
+        left: '10%',
+        right: '10%',
+        top: '10%',
+        bottom: '10%',
+        height: 'auto',
+        z: 2,
+        containLavel: true,
+      },
+      xAxis: [{
+        type: 'category',
+        boundaryGap: false,
+        inverse: true, //反向x轴
+
+        axisLine: {
+          show: false,
+        },
+        axisTick: {
+          show: false,
+        },
+        axisLabel: {
+          show: false,
+        },
+        data: this.data.xData
+      }],
+      yAxis: [{
+        type: 'value',
+        max: yMax,
+        min: yMin,
+        splitNumber: ySplitNumber,
+        axisLine: {
+          show: false,
+        },
+        axisTick: {
+          show: false,
+        },
+        axisLabel: {
+          color: '#cecff1',
+          fontSize: 12,
+        },
+
+        splitLine: {
+          show: true,
+          lineStyle: {
+            color: '#333756',
+            width: '1'
+          }
+        },
+      }],
+      series: [{
+        name: '数值',
+        type: 'line',
+        color: '#FFFFFF',
+        lineStyle: {
+          width: 1
+        },
+        showSymbol: true,
+        hoverAnimation: false, //圆点
+        markArea: {
+          silent: true,
+          data: [
+            [{
+              yAxis: markAreaMin
+            }, {
+              yAxis: markAreaMax
+            }]
+          ]
+        },
+        data: this.data.hbData
+      }]
+    };
+    return option
+  },
+
+  setBr: function () {
+    let option = this.initOption({
+      yMax: 40,//Y轴最大值
+      yMin: 0,
+      ySplitNumber: 4,
+      markAreaMin: 10,
+      markAreaMax: 20
+    });
+    ChartPer2.setOption(option);
+    return ChartPer2;
+  },
+
+  mqtt: function () {
+    let that = this;
+
+    that.bhUpdata()
+
+
+  },
+  //实时更新
+  bhUpdata: function (newData) {
+
+    let set = setInterval(() => {
+      let {
+        brData,
+        rfidSignalQ,
+        rfidSignalI,
+      } = this.data;
+      brData.push(rfidSignalQ);
+      if (brData.length >= 60) {
+        brData.shift();
+      }
+
+      ChartPer2.setOption({
+        series: [{
+          data: brData, 
+          
+        }]
+      });
+
+      this.setData({
+        brData,
+        rfidSignalQ,
+        rfidSignalI,
+      })
+    }, 1000)
+  }
 })
