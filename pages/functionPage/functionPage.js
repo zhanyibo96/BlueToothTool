@@ -81,7 +81,9 @@ Page({
 
     this.mqtt();
     let brData = [];
+    let hbData = [];
     for (let i = 0; i < 15; i++) {
+      hbData.push(null);
       brData.push(null);
     }
   
@@ -91,6 +93,7 @@ Page({
       deviceId: devid,
       name: devname,
       serviceId: devserviceid,
+      hbData,
       brData 
     });
     //获取特征值
@@ -108,7 +111,7 @@ Page({
     })
   
   },
-  
+
   //销毁时清空Chart
   onUnload: function () {
     ChartPer = null;
@@ -347,7 +350,22 @@ Page({
       rfidSignalI: "0",
     });
   },
+
   //echarts图设置
+  init_hb_echarts: function () {
+    this.echartsHb.init((canvas, width, height) => {
+      //初始化图标
+      ChartPer = echarts.init(canvas, null, {
+        width: width,
+        height: height
+      });
+
+      this.setHb();
+      //返回值为chart实列否则会有影响
+      return ChartPer;
+    })
+  },
+
   init_br_echarts: function () {
     this.echartsBr.init((canvas, width, height) => {
       //初始化图标
@@ -442,10 +460,22 @@ Page({
             }]
           ]
         },
-        data: this.data.hbData
+        // data: this.data.hbData
       }]
     };
     return option
+  },
+
+  setHb: function () {
+    let option = this.initOption({
+      yMax: 40,//Y轴最大值
+      yMin: 0,
+      ySplitNumber: 4,
+      markAreaMin: 10,
+      markAreaMax: 20
+    });
+    ChartPer.setOption(option);
+    return ChartPer;
   },
 
   setBr: function () {
@@ -473,25 +503,31 @@ Page({
     let set = setInterval(() => {
       let {
         brData,
+        hbData,
         rfidSignalQ,
         rfidSignalI,
       } = this.data;
-      brData.push(rfidSignalQ);
+      hbData.push(rfidSignalQ);
+      brData.push(rfidSignalI);
       if (brData.length >= 60) {
+        hbData.shift();
         brData.shift();
       }
-
+      ChartPer.setOption({
+        series: [{
+          data: hbData
+        }]
+      });
       ChartPer2.setOption({
         series: [{
           data: brData, 
-          
         }]
       });
 
       this.setData({
+        hbData,
         brData,
-        rfidSignalQ,
-        rfidSignalI,
+
       })
     }, 1000)
   }

@@ -21,7 +21,9 @@
 <view class="rfidSignalQ" ></view>
 <view class="rfidSignalI" ></view>
 </view>
-
+<view class="userhb">
+        <ec-canvas class="mychart-dom-line" canvas-id="mychart-line" id="mychart-line" ec="{{hb}}"></ec-canvas>
+</view>
 <view class="userhb">
         <ec-canvas class="mychart-dom-line" canvas-id="mychart2-line" id="mychart2-line" ec="{{br}}"></ec-canvas>
 </view>
