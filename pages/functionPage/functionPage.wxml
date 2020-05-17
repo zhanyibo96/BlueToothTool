@@ -9,14 +9,7 @@
   <view>纬度：{{longitude}}</view>
 </view>
 
-<!-- <view class='card'>
-  <view>日志：</view>
-  <view>
-    <scroll-view scroll-y="true" class='text-box list'>
-      <text>{{textLog}}</text>
-    </scroll-view>
-  </view>
-</view> -->
+
 <view class="rfidSignal" style="flex-direction:row;">
 <view class="rfidSignalQ" ></view>
 <view class="rfidSignalI" ></view>
@@ -24,7 +17,7 @@
 <view class="userhb">
         <ec-canvas class="mychart-dom-line" canvas-id="mychart-line" id="mychart-line" ec="{{hb}}"></ec-canvas>
 </view>
-<view class="userhb">
+<view class="userbr">
         <ec-canvas class="mychart-dom-line" canvas-id="mychart2-line" id="mychart2-line" ec="{{br}}"></ec-canvas>
 </view>
 
@@ -33,7 +26,6 @@
 
 <!-- echarts图 -->
  <view class='function-input'>
-    <!-- <input class="input"  type="text" cursor-spacing="20" bindinput="orderInput" placeholder="请输入指令" value='{{accountInputStr}}' /> -->
     <button bindtap='sentOrder' class="send">单次获取</button>
     <button bindtap='continuousSentOrder' class="send">连续获取</button>
     <button bindtap='stopSentOrder' class="send">停止获取</button>

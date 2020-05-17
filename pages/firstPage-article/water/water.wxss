@@ -1,3 +1,4 @@
+
 .slides{
 	height: 380rpx;
 }
@@ -17,26 +18,59 @@
 .top-view text{
   color: #888888;
 }
-
-.article01{
-  height: auto;
-  width: auto;
-  padding-left: 40rpx;
-  padding-right: 40rpx;
-  font-size: 30rpx;
+.top-image{
+  display: flex;
+  flex-direction: row;
 }
-.image01{
-    text-align:center;
+.part1{
+  
 }
-.image01 image{
-  width: 90%;
-  height: 30rpx;
+.top-image image{
+  height: 90rpx;
+  width: 120rpx;
+  margin: 0 auto;
+}
+.top-image2{
+  display: flex;
+  flex-direction: column;
+}
+.top-image2 image{
+  height: 100rpx;
+  width: 240rpx;
+  margin: 0 auto;
   margin-top: 20rpx;
 }
+.article01{
+  height: auto;
+  width: 650rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin: 0 auto;
+  font-size: 30rpx;
+  border-image: url(/images/bgwater.jpg) 4rpx 4rpx round;
+  border: 1px solid #8f8f8f;
+  border-radius: 5px;
+  box-shadow:2rpx 2rpx 2rpx 2rpx #888888 inset
+}
+.image01{
+  display: flex;
+  flex-direction: column;
+  height: 350rpx;
+}
+.image01 image{
+  width: 70%;
+  height: 350rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  
+}
 .article02{
+  display: flex;
+  flex-direction: column;
   height: auto;
   width: auto;
   padding-left: 40rpx;
   padding-right: 40rpx;
   font-size: 30rpx;
+  
 }

@@ -5,20 +5,10 @@
   <image src="/images/assets/firstPage.article.pic/smog.jpg"></image>
 </view>
 <view class="top-view">
-  <text>别让孩子知道的鱼类只有泥鳅。</text>
+  <text>拒绝十面霾伏，还我碧水蓝天。</text>
 </view>
 <view class="article01">
-  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;雾霾来源是工业排放污染，城市建设装修、道路扬尘，生活取暖排烟以及汽车尾气等。雾霾中包含了细微尘土、挥发性酸雾如硝酸硫酸雾、有机碳氢化合物、重金属等，这正好是重工业空气污染物、扬尘、汽车尾气的主要成分。特别是以燃煤为主的火力发电、冶金、化工和粉尘集中的木器加工、建材工业，是空气悬浮微颗粒和硫化物的主要来源之一。
+  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;雾霾来源是工业排放污染，城市建设装修、道路扬尘，生活取暖排烟以及汽车尾气等。霾的组成成分包括数百种大气化学颗粒物质。其中 有害健康的主要是直径小于10微米的气溶胶粒子，如矿物颗粒物、燃料和汽车废气等，它能直接进入并粘附在人体呼吸道和肺泡中。尤其是亚微米粒子会分别沉积于上、下呼吸道和肺泡中，引起急性鼻炎和急性支气管炎等病症。
   </text>
 </view>
-
-<view class="image01">
-  <image src="/images/assets/firstPage.article.pic/fenduan.jpg"></image>
-</view>
-
-<view class="article02">
-  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;霾的组成成分非常复杂,包括数百种大气化学颗粒物质。其中 有害健康的主要是直径小于10微米的气溶胶粒子，如矿物颗粒物、海盐、硫酸盐、硝酸盐、有机气溶胶粒子、燃料和汽车废气等，它能直接进入并粘附在人体呼吸道和肺泡中。尤其是亚微米粒子会分别沉积于上、下呼吸道和肺泡中，引起急性鼻炎和急性支气管炎等病症。对于支气管哮喘、慢性支气管炎、阻塞性肺气肿和慢性阻塞性肺疾病等慢性呼吸系统疾病患者，雾霾天气可使病情急性发作或急性加重。如果长期处于这种环境还会诱发肺癌。
-  </text>
-</view>
-
 </view>

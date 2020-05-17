@@ -1,4 +1,7 @@
 /* pages/firstPage.wxss */
+page{
+  background-color: #fff;
+}
 .slides{
 	height: 380rpx;
 }
@@ -18,8 +21,8 @@
 .grids{
 	display: flex;
 	flex-wrap: wrap;
-	background-color: #fff;
 	font-size: 28rpx;
+  
 }
 .grids .item{
 	display: flex;
@@ -28,6 +31,7 @@
 	align-items: center;
 	width: 250rpx;
 	height: 250rpx;
+  background-color: #fff;
 	border:1rpx solid #eee;
 	box-sizing: border-box;
 }

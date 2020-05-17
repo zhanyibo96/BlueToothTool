@@ -23,7 +23,7 @@
   width: auto;
   padding-left: 40rpx;
   padding-right: 40rpx;
-  font-size: 30rpx;
+  font-size: 14px;
 }
 .image01{
     text-align:center;
@@ -32,11 +32,4 @@
   width: 90%;
   height: 30rpx;
   margin-top: 20rpx;
-}
-.article02{
-  height: auto;
-  width: auto;
-  padding-left: 40rpx;
-  padding-right: 40rpx;
-  font-size: 30rpx;
 }

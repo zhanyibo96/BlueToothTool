@@ -30,7 +30,8 @@ Page({
     rfidId:"空",
     rfidSignalQ: "0",
     rfidSignalI: "0",
-    setInter: '',
+    time: 60,         //初始时间
+    interval: "",      //定时器
 
     //echarts图变量
     option: {},
@@ -82,7 +83,7 @@ Page({
     this.mqtt();
     let brData = [];
     let hbData = [];
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < 60; i++) {
       hbData.push(null);
       brData.push(null);
     }
@@ -100,7 +101,7 @@ Page({
     that.getBLEDeviceCharacteristics();
 
     wx.getLocation({
-      type: 'gcj02',
+      type: 'wgs84',
       success: (res) => {
         console.log(res)
         this.setData({
@@ -117,6 +118,7 @@ Page({
     ChartPer = null;
     ChartPer2 = null;
     ChartPer3 = null;
+    that.clearTimeInterval(that);
   },
 
   /**
@@ -137,16 +139,9 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-    
+    var that = this;
+    that.clearTimeInterval(that)
   },
-
-  //清空log日志
-  // startClear: function () {
-  //   var that = this;
-  //   that.setData({
-  //     textLog: ""
-  //   });
-  // },
 
   //返回蓝牙是否正处于链接状态
   onBLEConnectionStateChange:function (onFailCallback) {
@@ -330,27 +325,61 @@ Page({
   //连续获取RFID的信号
   continuousSentOrder:function(){
     var that = this;
+    that.stop(that); 
+    var time = that.data.time;
     var orderStr = "430301";//获取RFID信号指令
-    var i=0;
-    that.data.setInter = setInterval(function () {
-      i=i+1;
-      console.log("第" + i + "次循环");
+    wx.showToast({
+      title: '开始连续获取信号',
+      icon: 'loading'
+    });
+    that.data.interval = setInterval(function () {
+      time--;
+      console.log("第" + time + "次获取");
       let order = utils.stringToBytes(orderStr);
       that.writeBLECharacteristicValue(order);
-    }, 1000)
+      if (time == 0) {           //归0时回到60
+        that.restartTap();
+      }
+    }, 500)
+    
+  },
+  stop: function (that) {
+    var time = 60;
+    var interval = ""
+    that.clearTimeInterval(that)
+    that.setData({
+      time: time,
+      interval: interval,
+    })
+  },
+  clearTimeInterval: function (that) {
+    var interval = that.data.interval;
+    clearInterval(interval)
   },
   //停止获取RFID的信号
   stopSentOrder:function(){
     var that = this;
+    
+    var interval = that.data.interval;
+    that.clearTimeInterval(that)
+    // clearInterval(that.data.interval);
+    wx.showToast({
+      title: '停止获取信号',
+      icon: 'success'
+    });
     console.log("循环暂停")
-    clearInterval(that.data.setInter);
     this.setData({
-      rfidId: "空",
+      rfidId: "无",
       rfidSignalQ: "0",
       rfidSignalI: "0",
     });
   },
-
+  restartTap: function () {
+    var that = this;
+    that.stop(that);
+    console.log("倒计时重新开始")
+    that.continuousSentOrder()
+  },
   //echarts图设置
   init_hb_echarts: function () {
     this.echartsHb.init((canvas, width, height) => {
@@ -527,8 +556,7 @@ Page({
       this.setData({
         hbData,
         brData,
-
       })
-    }, 1000)
+    }, 500)
   }
 })

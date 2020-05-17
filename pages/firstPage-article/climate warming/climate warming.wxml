@@ -5,18 +5,9 @@
   <image src="/images/assets/firstPage.article.pic/climate warming.jpg"></image>
 </view>
 <view class="top-view">
-  <text>别让孩子知道的鱼类只有泥鳅。</text>
+  <text>废气，stop!废水，stop!污染，go away!</text>
 </view>
 <view class="article01">
-  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全球气候变暖是一种和自然有关的现象，是由于温室效应不断积累，导致地气系统吸收与发射的能量不平衡，能量不断在地气系统累积，从而导致温度上升，造成全球气候变暖。
-  </text>
-</view>
-
-<view class="image01">
-  <image src="/images/assets/firstPage.article.pic/fenduan.jpg"></image>
-</view>
-
-<view class="article02">
   <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由于人们焚烧化石燃料，如石油，煤炭等，或砍伐森林并将其焚烧时会产生大量的二氧化碳，即温室气体，这些温室气体对来自太阳辐射的可见光具有高度透过性，而对地球发射出来的长波辐射具有高度吸收性，能强烈吸收地面辐射中的红外线，导致地球温度上升，即温室效应。全球变暖会使全球降水量重新分配、冰川和冻土消融、海平面上升等，不仅危害自然生态系统的平衡，还威胁人类的生存。
   </text>
 </view>

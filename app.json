@@ -1,16 +1,13 @@
 {
   "pages": [
         
-    "pages/index/index",
     "pages/firstPage/firstPage",
     "pages/functionPage/functionPage",
+    "pages/index/index",
     "pages/firstPage-article/water/water",
     "pages/firstPage-article/nature/nature",
     "pages/firstPage-article/desert/desert",
-    "pages/firstPage-article/sand storm/sand storm",
     "pages/firstPage-article/smog/smog",
-    "pages/firstPage-article/white trash/white trash",
-    "pages/firstPage-article/nuclear pollution/nuclear pollution",
     "pages/firstPage-article/climate warming/climate warming",
     "pages/firstPage-article/ozone hole/ozone hole"
   ],
@@ -22,10 +19,10 @@
   
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTitleText": "智能垃圾分类小程序",
     "navigationBarTextStyle": "black",
-    "backgroundColor": "#F8F8F8"
+    "navigationBarBackgroundColor": "#EDEDED",
+    "backgroundColor": "#EDEDED"
   },
   "tabBar": {
     "list": [

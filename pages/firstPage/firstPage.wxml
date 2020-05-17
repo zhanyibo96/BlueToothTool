@@ -1,4 +1,5 @@
 <!--pages/firstPage.wxml-->
+<view class="contain">
 <swiper class="slides">
   <swiper-item>
     <image src="../../images/1.jpg" mode="aspectFill"/>
@@ -17,36 +18,25 @@
     <text>水源</text>
   </view>
   <view class="item" bindtap="nature">
-    <image src="/images/assets/icons/grid-02.png"  />
+    <image src="/images/assets/icons/grid-02.png"/>
     <text>自然</text>
   </view>
   <view class="item" bindtap="desert">
     <image src="/images/assets/icons/grid-03.png"/>
     <text>沙漠化</text>
   </view>
-  <view class="item" bindtap="sandstorm">
-    <image src="/images/assets/icons/grid-04.png"/>
-    <text>沙尘暴</text>
+  <view class="item" bindtap="ozonehole">
+    <image src="/images/assets/icons/grid-09.png"/>
+    <text>臭氧层空洞</text>
   </view>
   <view class="item" bindtap="smog">
     <image src="/images/assets/icons/grid-05.png"/>
     <text>雾霾</text>
   </view>
-  <view class="item" bindtap="whitetrash">
-    <image src="/images/assets/icons/grid-06.png"/>
-    <text>白色垃圾</text>
-  </view>
-  <view class="item" bindtap="nuclearpollution">
-    <image src="/images/assets/icons/grid-07.png"/>
-    <text>核污染</text>
-  </view>
   <view class="item" bindtap="climatewarming">
     <image src="/images/assets/icons/grid-08.png"/>
     <text>气候变暖</text>
   </view>
-  <view class="item" bindtap="ozonehole">
-    <image src="/images/assets/icons/grid-09.png"/>
-    <text>臭氧层空洞</text>
-  </view>
+</view>
 </view>
 

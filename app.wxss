@@ -1,6 +1,6 @@
 /**app.wxss**/
  page {
-  background-color: #F8F8F8;
+  background-color: #FFFFFF;
   height: 100%;
   font-size: 32rpx;
   line-height: 1.6;
