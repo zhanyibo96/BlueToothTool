@@ -7,8 +7,22 @@
 <view class="top-view">
   <text>保护臭氧，刻不容缓</text>
 </view>
-<view class="article01">
-  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;臭氧层空洞是大气平流层中臭氧浓度最小处，是臭氧层缺失处。而臭氧层是大气平流层中臭氧浓度最大处，是地球的一个保护层，太阳紫外线辐射大部被其吸收。有臭氧层空洞的地区会对生物产生重大的影响。如今居住在距南极洲较近的智利南端海伦娜岬角的居民，已尝到苦头，只要走出家门，就要在衣服遮不住的肤面，涂上防晒油，戴上太阳眼镜，否则半小时后，皮肤就晒成鲜艳的粉红色，并伴有痒痛；羊群则多患白内障，几乎全盲。
+
+<view class="title">
+  <text>臭氧层</text>
+</view>
+
+<view class="article">
+  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;臭氧层空洞是大气平流层中臭氧浓度最小处，是臭氧层缺失处。而臭氧层是大气平流层中臭氧浓度最大处，是地球的一个保护层，太阳紫外线辐射大部被其吸收。有臭氧层空洞的地区会对生物产生重大的影响。
+  </text>
+</view>
+
+<view class="title">
+  <text>紫外线</text>
+</view>
+
+<view class="article">
+  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如今居住在距南极洲较近的智利南端海伦娜岬角的居民，只要走出家门，就要在衣服遮不住的肤面，涂上防晒油，戴上太阳眼镜，否则半小时后，皮肤就晒成鲜艳的粉红色，并伴有痒痛；羊群则多患白内障，几乎全盲。
   </text>
 </view>
 

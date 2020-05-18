@@ -7,8 +7,23 @@
 <view class="top-view">
   <text>拒绝十面霾伏，还我碧水蓝天。</text>
 </view>
-<view class="article01">
-  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;雾霾来源是工业排放污染，城市建设装修、道路扬尘，生活取暖排烟以及汽车尾气等。霾的组成成分包括数百种大气化学颗粒物质。其中 有害健康的主要是直径小于10微米的气溶胶粒子，如矿物颗粒物、燃料和汽车废气等，它能直接进入并粘附在人体呼吸道和肺泡中。尤其是亚微米粒子会分别沉积于上、下呼吸道和肺泡中，引起急性鼻炎和急性支气管炎等病症。
+
+<view class="title">
+  <text>雾霾</text>
+</view>
+
+<view class="article">
+  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;雾霾来源是工业排放污染，城市建设装修、道路扬尘，生活取暖排烟以及汽车尾气等。霾的组成成分包括数百种大气化学颗粒物质。
   </text>
 </view>
+
+<view class="title">
+  <text>危害</text>
+</view>
+
+<view class="article">
+  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有害健康的主要是直径小于10微米的气溶胶粒子，如矿物颗粒物、燃料和汽车废气等，它能直接进入并粘附在人体呼吸道和肺泡中。尤其是亚微米粒子会分别沉积于上、下呼吸道和肺泡中，引起急性鼻炎和急性支气管炎等病症。
+  </text>
+</view>
+
 </view>

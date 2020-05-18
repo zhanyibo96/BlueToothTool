@@ -1,5 +1,4 @@
 // pages/firstPage-article/desert/desert.js
-var wxCharts = require('../../../utils/wxcharts.js');
 var app = getApp();
 var pieChart = null;
 Page({

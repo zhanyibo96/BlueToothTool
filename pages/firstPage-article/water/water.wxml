@@ -8,25 +8,21 @@
   <text>别让孩子知道的鱼类只有泥鳅。</text>
 </view>
 
-<view class="top-image">
-  <image src="/images/缺水.png"></image>
+<view class="title">
+  <text>缺水</text>
 </view>
 
-<view class="article01">
+<view class="article">
   <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我国是世界上 12 个贫水国之一, 人均淡水资源只有世界平均值的 1/4, 全国六百多个城市有一半以上缺水, 更为严重的是, 人们还把生产 和生活中的大量污水排向江河湖泊, 这就象一个贫血病人的血液又被污染了一样。  
   </text>
 </view>
 
-<view class="image01">
-  <image src="/images/assets/firstPage.article.pic/water01.jpg"></image>
+<view class="title">
+  <text>水源污染</text>
 </view>
 
-<view class="top-image2">
-  <image src="/images/污水.png"></image>
-</view>
-
-<view class="article01">
-  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;据环境观测, 全国每天约有 1 亿吨污水未经处理就直接排入水体。 全国七大水系中一半以上的河段水质受到污染,35 个湖泊中, 有 17 个被严重污染, 全国 1/3 的水体不适于鱼类生存,1/4 的水体不适于灌 溉,90%以上的城市水域污染严重,40%的水源已不能饮用, 南方城市总 缺水量的 60%至 70%是由于水源污染造成的。
+<view class="article">
+  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;据环境观测, 全国每天约有 1 亿吨污水未经处理就直接排入水体。 全国七大水系中一半以上的河段水质受到污染,35 个湖泊中, 有 17 个被严重污染,90%以上的城市水域污染严重,40%的水源已不能饮用。
   </text>
 </view>
 

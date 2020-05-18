@@ -1,11 +1,10 @@
 {
   "pages": [
-        
     "pages/firstPage/firstPage",
     "pages/functionPage/functionPage",
     "pages/index/index",
     "pages/firstPage-article/water/water",
-    "pages/firstPage-article/nature/nature",
+    "pages/firstPage-article/nature/nature", 
     "pages/firstPage-article/desert/desert",
     "pages/firstPage-article/smog/smog",
     "pages/firstPage-article/climate warming/climate warming",

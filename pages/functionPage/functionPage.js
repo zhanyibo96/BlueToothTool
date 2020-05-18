@@ -99,7 +99,6 @@ Page({
     });
     //获取特征值
     that.getBLEDeviceCharacteristics();
-
     wx.getLocation({
       type: 'wgs84',
       success: (res) => {
@@ -388,7 +387,6 @@ Page({
         width: width,
         height: height
       });
-
       this.setHb();
       //返回值为chart实列否则会有影响
       return ChartPer;

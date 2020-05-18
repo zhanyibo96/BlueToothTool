@@ -8,14 +8,20 @@
   <text>别让人类的家园成为一盘散沙。</text>
 </view>
 
-<view class="article01">
+<view class="title">
+  <text>沙漠化</text>
+</view>
+
+<view class="article">
   <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全球沙漠总面积已超过4800万平方千米，约占陆地的1/3。荒漠化不仅是生态环境问题，更演变为经济问题和社会问题。
   </text>
 </view>
-  <view class="container">
-    <canvas canvas-id="pieCanvas" class="canvas" style="height:300px" bindtouchstart="touchHandler"></canvas>
+
+<view class="title">
+  <text>危害</text>
 </view>
-<view class="article01">
+
+<view class="article">
   <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;它给我们带来贫困和社会不稳定。破坏土地资源，使可供农牧的土地面积减少，土地滋生能力退化，植物量减少，土地载畜力下降，作物的单位面积产量降低。荒漠化已给许多国家和地区的农业、牧业和人民生活财产造成严重损失。 
   </text>
 </view>

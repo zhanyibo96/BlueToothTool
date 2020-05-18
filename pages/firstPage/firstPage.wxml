@@ -12,6 +12,10 @@
   </swiper-item>
 </swiper>
 
+<view class="top-view">
+  <text>自然不可改良   生活可以选择   选择绿色生活   健康适度消费</text>
+</view>
+
 <view class="grids">
   <view class="item" bindtap="water">
     <image src="/images/assets/icons/grid-01.png"/>

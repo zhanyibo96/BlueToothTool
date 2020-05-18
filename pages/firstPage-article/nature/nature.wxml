@@ -4,11 +4,26 @@
 <view class="slides">
   <image src="/images/assets/firstPage.article.pic/nature.jpg"></image>
 </view>
+
 <view class="top-view">
   <text>地球只有一个，失去它，我们到哪里去寻找家园</text>
 </view>
-<view class="article01">
-  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;自然，是人类的起点，自然，给予了我们生命，而我们却破坏自然。导致自然原有的生态天平倾斜了。水资源也变得浑浊，空气也不纯净了，不可再生资源也在逐渐减少。地球表面满大街都是易拉罐的身影，无数的一次性筷子遍布各地，工厂不断在排放垃圾于海水中。人类变得如此吝啬，人类成为了地球上的“毒瘤”。
+
+<view class="title">
+  <text>破坏</text>
+</view>
+
+<view class="article">
+  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们生活在一个幸福的时代，生活条件相比于以前有了很大的改善。但是我们周遭的环境却遭受着严重的破坏。
+  </text>
+</view>
+
+<view class="title">
+  <text>考验</text>
+</view>
+
+<view class="article">
+  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们生活在地球，一切都源于大自然的馈赠，每一个干净的环境，再优渥的生活条件也没有意义。我们的大自然正经受着前所未有的资源和环境考验。我们既是地球的破坏者，但我们最终也会变成受害者。
   </text>
 </view>
 
